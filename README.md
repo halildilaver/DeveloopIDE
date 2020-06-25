@@ -1,2 +1,2 @@
-# Roboo-IDE
-Roboo IDE for Kivvi
+# DeveloopIDE
+DeveloopIDE for Kivvi
