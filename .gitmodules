@@ -1,12 +1,12 @@
 [submodule "platforms/esp-idf"]
 	path = platforms/esp-idf
-	url = https://github.com/MakerAsia/kbpro-esp-idf-platfrom
+	url = https://github.com/halildilaver/kivvi-esp-idf-platform
 [submodule "platforms/arduino-esp32"]
 	path = platforms/arduino-esp32
-	url = https://github.com/MakerAsia/kbpro-arduino-platfrom
+	url = https://github.com/halildilaver/kivvi-arduino-platfrom
 [submodule "platforms/arduino-avr"]
 	path = platforms/arduino-avr
-	url = https://github.com/MakerAsia/kbide-arduino-avr-platform
-[submodule "packages/kbide-extension-pack"]
-	path = packages/kbide-extension-pack
-	url = https://github.com/cmmc-kbide/kbide-extension-pack
+	url = https://github.com/halildilaver/kivvi-arduino-avr-platform
+[submodule "boards/Develoop-IOT"]
+	path = boards/Develoop-IOT
+	url = https://github.com/halildilaver/Develoop-IOT
