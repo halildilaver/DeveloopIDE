@@ -1,7 +1,7 @@
 {
   "name": "DeveloopIDE",
   "description": "DeveloopIDE for Everyone",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "private": true,
   "author": "Kivvi AR-GE",
   "scripts": {

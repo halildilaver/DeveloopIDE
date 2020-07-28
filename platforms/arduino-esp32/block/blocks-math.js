@@ -17,7 +17,7 @@ init: function () {
 			    }],
 			    "output": "Number",
 			    "helpUrl": "%{BKY_MATH_NUMBER_HELPURL}",
-					"colour": Blockly.Msg.MATH_HUE,
+					"colour": 190,
 			    "tooltip": "%{BKY_MATH_NUMBER_TOOLTIP}",
 			    "extensions": ["parent_tooltip_when_inline"]
 			}
@@ -50,7 +50,7 @@ Blockly.Blocks["math_single"] = {
 				}
 			],
 			"output": "Number",
-			"colour": Blockly.Msg.MATH_HUE,
+			"colour": 190,
 			"helpUrl": "%{BKY_MATH_SINGLE_HELPURL}",
 			"extensions": ["math_op_tooltip"]
 		});
@@ -80,7 +80,7 @@ Blockly.Blocks['math_trig'] = {
 				}
 			],
 			"output": "Number",
-			"colour": Blockly.Msg.MATH_HUE,
+			"colour": 190,
 			"helpUrl": "%{BKY_MATH_TRIG_HELPURL}",
 			"extensions": ["math_op_tooltip"]
 		});
@@ -107,7 +107,7 @@ Blockly.Blocks['math_round'] = {
 				}
 			],
 			"output": "Number",
-			"colour": Blockly.Msg.MATH_HUE,
+			"colour": 190,
 			"helpUrl": "%{BKY_MATH_ROUND_HELPURL}",
 			"tooltip": "%{BKY_MATH_ROUND_TOOLTIP}"
 		});
@@ -138,7 +138,7 @@ Blockly.Blocks['math_random_int'] = {
 			],
 			"inputsInline": true,
 			"output": "Number",
-			"colour": Blockly.Msg.MATH_HUE,
+			"colour": 190,
 			"tooltip": "%{BKY_MATH_RANDOM_INT_TOOLTIP}",
 			"helpUrl": "%{BKY_MATH_RANDOM_INT_HELPURL}"
 		});
@@ -162,7 +162,7 @@ Blockly.Blocks['math_pow'] = {
 			],
 			"inputsInline": true,
 			"output": "Number",
-			"colour": Blockly.Msg.MATH_HUE,
+			"colour": 190,
 			"tooltip": Blockly.Msg.MATH_POW_TOOLTIP,
 			"helpUrl": Blockly.Msg.MATH_POW_HELPURL
 		});
@@ -192,7 +192,7 @@ Blockly.Blocks['math_number_property'] = {
 			],
 			"inputsInline": true,
 			"output": "Boolean",
-			"colour": Blockly.Msg.MATH_HUE,
+			"colour": 190,
 			"tooltip": "%{BKY_MATH_IS_TOOLTIP}",
 			"mutator": "math_is_divisibleby_mutator"
 		});
@@ -226,7 +226,7 @@ Blockly.Blocks['convert_ra_de'] = {
 			  }
 			],
 			"output": "Number",
-			"colour": Blockly.Msg.MATH_HUE,
+			"colour": 190,
 			"tooltip": "%{BKY_MATH_CONVERT_RA_DE_TOOLTIP}",
 		});
 	}

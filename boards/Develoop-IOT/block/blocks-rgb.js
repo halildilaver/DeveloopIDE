@@ -6,7 +6,7 @@ module.exports = function(Blockly) {
     init: function() {
       this.appendDummyInput()
         .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
-        .appendField("RGB LED Setup");
+        .appendField("RGB LED bağlan");
       this.appendValueInput("PIN")
         .setCheck("Number")
         .appendField("Pin:");
@@ -16,7 +16,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -26,10 +26,10 @@ module.exports = function(Blockly) {
     init: function() {
       this.appendDummyInput()
         .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
-        .appendField("RGB Led Temizle");
+        .appendField("RGB LED Söndür");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -39,10 +39,10 @@ module.exports = function(Blockly) {
     init: function() {
       this.appendDummyInput()
       .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
-        .appendField("RGB Led Göster");
+        .appendField("RGB LED Göster");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -53,11 +53,11 @@ module.exports = function(Blockly) {
       this.appendValueInput("BRIGHT")
       .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
         .setCheck("Number")
-        .appendField("RGB Led Parlaklık Ayarla (0-255)");
+        .appendField("RGB LED Parlaklık Ayarla (0-255)");
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -74,7 +74,7 @@ module.exports = function(Blockly) {
         .appendField(new Blockly.FieldColour("#FFFFFF"), "COLOR");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -95,7 +95,7 @@ module.exports = function(Blockly) {
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
 	  this.setInputsInline(true);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -110,7 +110,7 @@ module.exports = function(Blockly) {
         .appendField("renk ile doldur");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -120,15 +120,15 @@ module.exports = function(Blockly) {
     init: function() {
       this.appendDummyInput()
       .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
-        .appendField("RGB LED colorWipe")
+        .appendField("RGB LED Nefes Alma")
         .appendField(new Blockly.FieldColour("#FFFFFF"), "COLOR");
       this.appendValueInput("TIME")
         .setCheck("Number")
-        .appendField("Time(ms)");
+        .appendField("Süresi(ms)");
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -138,15 +138,15 @@ module.exports = function(Blockly) {
     init: function() {
       this.appendDummyInput()
       .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
-        .appendField("RGB LED theaterChase")
+        .appendField("RGB LED Göz Kırpma")
         .appendField(new Blockly.FieldColour("#FFFFFF"), "COLOR");
       this.appendValueInput("TIME")
         .setCheck("Number")
-        .appendField("Time(ms)");
+        .appendField("Süresi(ms)");
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -156,10 +156,10 @@ module.exports = function(Blockly) {
     init: function() {
       this.appendDummyInput()
       .appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/1601900.png`,20,20,"*"))
-        .appendField("RGB LED Gökkuşağı Setup");
+        .appendField("RGB LED Gökkuşağı Bağlan");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -174,7 +174,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -189,7 +189,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(220);
+      this.setColour(50);
       this.setTooltip("");
       this.setHelpUrl("");
     }

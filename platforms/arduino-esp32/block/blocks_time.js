@@ -5,13 +5,13 @@ Blockly.Blocks['time_delay'] = {
   init: function() {
     this.appendValueInput("delay")
         .setCheck("Number")
-        .appendField("delay");
+        .appendField("Bekle");
     this.appendDummyInput()
-        .appendField("millisecond");
+        .appendField("milisaniye");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("pause running program for awhile");
  this.setHelpUrl("");
   }
@@ -21,13 +21,13 @@ Blockly.Blocks['time_delay'] = {
     init: function() {
       this.appendValueInput("delay")
       .setCheck("Number")
-      .appendField("delay");
+      .appendField("Bekle");
       this.appendDummyInput()
-      .appendField("microseconds");
+      .appendField("mikrosaniye");
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(0);
+      this.setColour(265);
       this.setTooltip("pause running program for awhile");
       this.setHelpUrl("");
     }
@@ -37,11 +37,11 @@ Blockly.Blocks['time_sync'] = {
   init: function() {
     this.appendDummyInput()
         .appendField(new Blockly.FieldImage("/static/icons/icons8_wifi_26px.png", 20, 20, "*"))
-        .appendField("sync internet time");
+        .appendField("İnternet saatini eşitle");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("sync time from internet (wifi & internet needed)");
  this.setHelpUrl("");
   }
@@ -50,10 +50,10 @@ Blockly.Blocks['time_sync'] = {
 Blockly.Blocks['time_get_year'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("get year");
+        .appendField("Yıl verisini al");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get now year (use sync time block first)");
  this.setHelpUrl("");
   }
@@ -62,10 +62,10 @@ Blockly.Blocks['time_get_year'] = {
 Blockly.Blocks['time_get_month'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("get month");
+        .appendField("Ay verisini al");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get now month (1-12) (use sync time block first)");
  this.setHelpUrl("");
   }
@@ -74,10 +74,10 @@ Blockly.Blocks['time_get_month'] = {
 Blockly.Blocks['time_get_day'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("get day of month");
+        .appendField("Gün verisini al");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get day of month (1-31) (use sync time block first)");
  this.setHelpUrl("");
   }
@@ -86,10 +86,10 @@ Blockly.Blocks['time_get_day'] = {
 Blockly.Blocks['time_get_day_of_week'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("get day of week");
+        .appendField("Hafta verisini al");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get day of week (Sunday = 0 , Monday = 1 , ... , Saturday = 6) (use sync time block first)");
  this.setHelpUrl("");
   }
@@ -98,10 +98,10 @@ Blockly.Blocks['time_get_day_of_week'] = {
 Blockly.Blocks['time_get_hour'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("get hour");
+        .appendField("Saat verisini al");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get hour of day (0-23) (use sync time block first)");
  this.setHelpUrl("");
   }
@@ -110,10 +110,10 @@ Blockly.Blocks['time_get_hour'] = {
 Blockly.Blocks['time_get_minute'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("get minute");
+        .appendField("Dakika verisini al");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get minute of now hour 0-59 (use sync time block first)");
  this.setHelpUrl("");
   }
@@ -122,10 +122,10 @@ Blockly.Blocks['time_get_minute'] = {
 Blockly.Blocks['time_get_second'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("get second");
+        .appendField("Saniye verisini al");
     this.setInputsInline(true);
     this.setOutput(true, "Number");
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get now second 0-59 (use sync time block first)");
  this.setHelpUrl("");
   }
@@ -134,10 +134,10 @@ Blockly.Blocks['time_get_second'] = {
 Blockly.Blocks['time_millis'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("timestamp millisecond");
+        .appendField("Timestamp milisaniye");
     this.setInputsInline(true);
     this.setOutput(true, ["Number","uint32_t"]);
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get time since program start in millisecond");
  this.setHelpUrl("");
   }
@@ -146,10 +146,10 @@ Blockly.Blocks['time_millis'] = {
 Blockly.Blocks['time_micros'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("timestamp microsecond");
+        .appendField("Timestamp mikrosaniye");
     this.setInputsInline(true);
     this.setOutput(true,["Number","uint32_t"]);
-    this.setColour(0);
+    this.setColour(265);
  this.setTooltip("get time since program start in microsecond");
  this.setHelpUrl("");
   }

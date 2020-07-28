@@ -36,7 +36,7 @@
                             <v-flex xs12>
                                 <v-text-field
                                         v-model="variable_name"
-                                        label="Variable name"
+                                        label="Değişken adı"
                                         required
                                         clearable
                                         counter
@@ -48,7 +48,7 @@
                     </v-card-text>
                     <v-card-actions>
                         <v-spacer></v-spacer>
-                        <v-btn color="blue darken-1" flat @click="variableDialog = false">Close</v-btn>
+                        <v-btn color="blue darken-1" flat @click="variableDialog = false">Kapat</v-btn>
                         <v-btn
                                 color="blue darken-1"
                                 flat
@@ -56,7 +56,7 @@
                                 ref="variableOK"
                                 @click="variableDialog = false"
                         >
-                            Save
+                            Kaydet
                         </v-btn>
                     </v-card-actions>
                 </v-card>
@@ -462,7 +462,7 @@
           if (value == null || value == "") {
             this.validated = false;
           }
-          return this.validated || "Invalid variable name";
+          return this.validated || "Geçersiz değişken adı";
         },
         musicDialog: false,
         ttsDialog: false,

@@ -30,7 +30,7 @@ module.exports = function(Blockly) {
         .appendField(new Blockly.FieldTextInput("1883"), "MQTT_PORT");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(260);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -52,7 +52,7 @@ module.exports = function(Blockly) {
         .appendField(new Blockly.FieldTextInput(clientId), "MQTT_CLIENT_ID");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(260);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -77,7 +77,7 @@ module.exports = function(Blockly) {
         .appendField("DATA");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(160);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -95,7 +95,7 @@ module.exports = function(Blockly) {
         .appendField(new Blockly.FieldTextInput("KBIDE/"), "MQTT_SUB_TOPIC");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(160);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -121,7 +121,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(20);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -145,7 +145,7 @@ module.exports = function(Blockly) {
         .setCheck(null);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(20);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -162,7 +162,7 @@ module.exports = function(Blockly) {
         .appendField("MQTT LOOP");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(260);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -173,7 +173,7 @@ module.exports = function(Blockly) {
       this.appendDummyInput()
         .appendField("topic");
       this.setOutput(true, null);
-      this.setColour(210);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }
@@ -184,7 +184,7 @@ module.exports = function(Blockly) {
       this.appendDummyInput()
         .appendField("payload");
       this.setOutput(true, null);
-      this.setColour(210);
+      this.setColour(5);
       this.setTooltip("");
       this.setHelpUrl("");
     }

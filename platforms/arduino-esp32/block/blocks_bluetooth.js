@@ -3,12 +3,12 @@ module.exports = function(Blockly){
 Blockly.Blocks['bt_start'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("start bluetooth name")
-        .appendField(new Blockly.FieldTextInput("KB-Pro"), "name");
+        .appendField("Bluetoothu Başlat")
+        .appendField(new Blockly.FieldTextInput("Develoop"), "name");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(225);
+    this.setColour(220);
     this.setTooltip("start Bluetooth");
     this.setHelpUrl("");
   }
@@ -18,14 +18,14 @@ Blockly.Blocks['bt_send_string'] = {
   init: function() {
     this.appendValueInput("text")
         .setCheck("String")
-        .appendField("Bluetooth send text");
+        .appendField("Bluetootha gönder");
     this.appendDummyInput()
-        .appendField("with new line")
+        .appendField("yeni satırda")
         .appendField(new Blockly.FieldCheckbox("TRUE"), "newline");
     this.setInputsInline(true);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(225);
+    this.setColour(220);
  this.setTooltip("send string to client");
  this.setHelpUrl("");
   }
@@ -34,12 +34,12 @@ Blockly.Blocks['bt_send_string'] = {
 Blockly.Blocks['bt_on_receive'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("on Bluetooth received data");
+        .appendField("Bluetooth veriyi aldığında");
     this.appendStatementInput("receiver_code")
         .setCheck(null);
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
-    this.setColour(225);
+    this.setColour(220);
  this.setTooltip("");
  this.setHelpUrl("");
   }
@@ -48,10 +48,10 @@ Blockly.Blocks['bt_on_receive'] = {
 Blockly.Blocks['bt_read_data'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("read Bluetooth received data");
+        .appendField("Bluetoothtan gelen veriyi yazdır");
     this.setInputsInline(true);
     this.setOutput(true, "String");
-    this.setColour(225);
+    this.setColour(220);
  this.setTooltip("read Bluetooth received data");
  this.setHelpUrl("");
   }
@@ -60,10 +60,10 @@ Blockly.Blocks['bt_read_data'] = {
 Blockly.Blocks['bt_read_line'] = {
   init: function() {
     this.appendDummyInput()
-        .appendField("read line from Bluetooth data");
+        .appendField("Bluetoothtan gelen satırı yazdır.");
     this.setInputsInline(true);
     this.setOutput(true, "String");
-    this.setColour(225);
+    this.setColour(220);
  this.setTooltip("read string line from Bluetooth received data");
  this.setHelpUrl("");
   }

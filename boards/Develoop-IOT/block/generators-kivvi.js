@@ -42,6 +42,11 @@ Blockly.JavaScript['kivvi_screen_clear'] = function(block) {
    return code;
 };
 
+Blockly.JavaScript['kivvi_screen_start'] = function(block) {
+   let code = 'u8g2.clearBuffer();';
+   return code;
+};
+
 Blockly.JavaScript['kivvi_screen_send'] = function(block) {
    let code = 'u8g2.sendBuffer();';
    return code;

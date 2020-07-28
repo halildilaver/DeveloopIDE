@@ -105,7 +105,7 @@ module.exports = {
             ]
         },        
         {
-            name : 'Sayaç',
+            name : 'Zamanlayıcı',
             color : '230',
             index : 20,
             icon : '/static/icons/icons8_Story_Time_96px.png',
@@ -245,7 +245,7 @@ module.exports = {
             ]
         },
         {
-            name : 'Sorgular',
+            name : 'Koşul Yapıları',
             color : '230',
             index : 50,
             icon : '/static/icons/icons8_serial_tasks_96px.png',
@@ -483,8 +483,7 @@ module.exports = {
                         },
                         'serial_write_newline',                        
                         'serial_read_line',
-                        'serial_read_until',
-                        'basic_string'
+                        'serial_read_until'
                     ]
                 },
                 {

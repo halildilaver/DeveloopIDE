@@ -9,23 +9,23 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodersetup.png`,20,20,"*"))
-				.appendField("Rotary Encoder Ayarları");
+				.appendField("Rotary Encodera Bağlan");
 			this.appendDummyInput()
 				.setAlign(Blockly.ALIGN_RIGHT)
 				.appendField("Sınır Değerlerini Ayarla ↓");
 			this.appendValueInput("ALT")
 				.setAlign(Blockly.ALIGN_RIGHT)
-				.appendField("Alt Sınır:");
+				.appendField("Min Değer:");
 			this.appendValueInput("UST")
 				.setAlign(Blockly.ALIGN_RIGHT)
-				.appendField("Üst Sınır:");
+				.appendField("Max Değer:");
 			this.appendDummyInput()
 				.setAlign(Blockly.ALIGN_RIGHT)
 				.appendField("Döngü:")
 				.appendField(new Blockly.FieldCheckbox("TRUE"), "SORGU");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(125);
+			this.setColour(330);
 			this.setTooltip("Rotary Setup");
 			this.setHelpUrl("");
 		}
@@ -36,17 +36,17 @@ module.exports = function (Blockly) {
 			this.appendValueInput("ALT")
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodericon.png`,20,20,"*"))
 				.appendField("Sınırları Ayarla →")
-				.appendField("Alt Sınır:");
+				.appendField("Min Değer:");
 			this.appendValueInput("UST")
 				.setAlign(Blockly.ALIGN_RIGHT)
-				.appendField("Üst Sınır:");
+				.appendField("Max Değer:");
 			this.appendDummyInput()
 				.setAlign(Blockly.ALIGN_RIGHT)
 				.appendField("Döngü:")
 				.appendField(new Blockly.FieldCheckbox("TRUE"), "SORGU");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(125);
+			this.setColour(330);
 			this.setInputsInline(true);
 			this.setTooltip("Rotary set");
 			this.setHelpUrl("");
@@ -58,9 +58,9 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodericon.png`,20,20,"*"))
-				.appendField("Encoder oku");
+				.appendField("Dönüş değerini oku");
 			this.setOutput(true);
-			this.setColour(125);
+			this.setColour(330);
 			this.setTooltip("Encoder oku");
 			this.setHelpUrl("http://kivblocks.kivvi.com.tr");
 		}
@@ -71,9 +71,9 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encodericon.png`,20,20,"*"))
-				.appendField("Delta oku");
+				.appendField("Dönüş yönünü oku");
 			this.setOutput(true);
-			this.setColour(125);
+			this.setColour(330);
 			this.setTooltip("Delta oku");
 			this.setHelpUrl("http://kivblocks.kivvi.com.tr");
 		}
@@ -83,13 +83,13 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/encoderbutton.png`,20,20,"*"))
-				.appendField("Rotary Buton")
-				.appendField(new Blockly.FieldDropdown([["Basıldığında","BUT_PUSHED"], ["Bırakıldığında","BUT_RELEASED"]]), "STATUS")
+				.appendField("Buton(a)")
+				.appendField(new Blockly.FieldDropdown([["Basıldığında","BUT_PUSHED"],["Sürekli Basıldığında","BUT_DOWN"],["Serbest konumda","BUT_DOWN"], ["Bırakıldığında","BUT_RELEASED"]]), "STATUS")
 			this.appendStatementInput("event_do")
 				.setCheck(null);
 			this.setPreviousStatement(true, null);
 			this.setNextStatement(true, null);
-			this.setColour(125);
+			this.setColour(330);
 			this.setTooltip("event when server got event");
 			this.setHelpUrl("");
 			}

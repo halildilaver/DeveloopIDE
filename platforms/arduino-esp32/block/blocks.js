@@ -28,7 +28,7 @@ Blockly.Blocks['arduino_loop'] = {
 // =============================================================================
 // basic
 // =============================================================================
-var basic_colour = Blockly.Msg.BASIC_HUE;
+var basic_colour = 160;
 // var basic_colour = "#32D496";
 
 Blockly.Blocks["basic_delay"] = {
@@ -67,7 +67,7 @@ Blockly.Blocks["basic_string"] = {
 		this.setOutput(true, 'String');
 		this.setPreviousStatement(false);
 		this.setNextStatement(false);
-		this.setColour(basic_colour);
+		this.setColour(0);
 		this.setTooltip(Blockly.Msg.BASIC_STRING_TOOLTIP);
 		this.setHelpUrl(Blockly.Msg.BASIC_STRING_HELPURL);
 	}
@@ -76,7 +76,7 @@ Blockly.Blocks["basic_string"] = {
 // =============================================================================
 // math
 // =============================================================================
-var math_colour = Blockly.Msg.MATH_HUE;
+var math_colour = 190;
 // var math_colour = "#7F94F8";
 /*Blockly.Blocks["math_number"] = {
 	init: function() {
@@ -119,9 +119,9 @@ Blockly.Blocks['math_arithmetic'] = {
 Blockly.Blocks['math_variables_set'] = {
 	init: function() {
 		this.appendDummyInput()
-			.appendField(Blockly.Msg.VARIABLES_SET_SET)
+			.appendField("Değişken:")
 			.appendField(new Blockly.FieldVariable("x"), "VAR")
-			.appendField(Blockly.Msg.VARIABLES_SET_TO);
+			.appendField("=");
 		this.appendValueInput('VALUE')
 			.setCheck('Number');
 		this.setInputsInline(true);
@@ -149,13 +149,13 @@ Blockly.Blocks['math_variables_get'] = {
 // =============================================================================
 // logic
 // =============================================================================
-var logic_colour = Blockly.Msg.LOGIC_HUE;
+var logic_colour = 180;
 // var logic_colour = "#3597F6";
 
 // =============================================================================
 // loop
 // =============================================================================
-var loop_colour = Blockly.Msg.LOOPS_HUE;;
+var loop_colour = 160;
 // var loop_colour = "#1DC020";
 Blockly.Blocks["loop_break"] = {
 	init: function() {

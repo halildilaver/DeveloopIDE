@@ -19,7 +19,7 @@ Blockly.defineBlocksWithJsonArray([
     }],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "%{BKY_LOOPS_HUE}",
+    "colour": 160,
     "tooltip": "%{BKY_CONTROLS_REPEAT_TOOLTIP}",
     "helpUrl": "%{BKY_CONTROLS_REPEAT_HELPURL}"
   },
@@ -42,7 +42,7 @@ Blockly.defineBlocksWithJsonArray([
     }],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "%{BKY_LOOPS_HUE}",
+    "colour": 160,
     "tooltip": "%{BKY_CONTROLS_REPEAT_TOOLTIP}",
     "helpUrl": "%{BKY_CONTROLS_REPEAT_HELPURL}"
   },
@@ -72,7 +72,7 @@ Blockly.defineBlocksWithJsonArray([
     }],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "%{BKY_LOOPS_HUE}",
+    "colour": 160,
     "helpUrl": "%{BKY_CONTROLS_WHILEUNTIL_HELPURL}",
     "extensions": ["controls_whileUntil_tooltip"]
   },
@@ -113,7 +113,7 @@ Blockly.defineBlocksWithJsonArray([
     "inputsInline": true,
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "%{BKY_LOOPS_HUE}",
+    "colour": 160,
     "helpUrl": "%{BKY_CONTROLS_FOR_HELPURL}",
     "extensions": [
       "controls_for_tooltip"
@@ -142,7 +142,7 @@ Blockly.defineBlocksWithJsonArray([
     }],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "%{BKY_LOOPS_HUE}",
+    "colour": 160,
     "helpUrl": "%{BKY_CONTROLS_FOREACH_HELPURL}",
     "extensions": [
       "controls_forEach_tooltip"
@@ -161,7 +161,7 @@ Blockly.defineBlocksWithJsonArray([
       ]
     }],
     "previousStatement": null,
-    "colour": "%{BKY_LOOPS_HUE}",
+    "colour": 160,
     "helpUrl": "%{BKY_CONTROLS_FLOW_STATEMENTS_HELPURL}",
     "extensions": [
       "controls_flow_tooltip",

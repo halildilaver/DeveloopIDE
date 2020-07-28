@@ -10,10 +10,10 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/motorsetup.png`,20,20,"*"))
-				.appendField("Motorları başlat");
+				.appendField("Motorlara bağlan");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Motorları ayarlar.");
 			this.setHelpUrl("");
 		}
@@ -23,10 +23,10 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/motorstop.png`,20,20,"*"))
-				.appendField("Durdur");
+				.appendField("Motorları durdur");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Motorları ayarlar.");
 			this.setHelpUrl("");
 		}
@@ -36,13 +36,13 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/motoricon.png`,20,20,"*"))
-				.appendField("İleri doğru")
+				.appendField("İleriye doğru")
 				.appendField(new Blockly.FieldDropdown([["5","5"], ["6","6"], ["7","7"], ["8","8"], ["9","9"], ["10","10"]]), "SPEED")
 				.appendField("Hızıyla git");
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -52,13 +52,13 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendDummyInput()
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/motoricon.png`,20,20,"*"))
-				.appendField("Geri doğru")
+				.appendField("Geriye doğru")
 				.appendField(new Blockly.FieldDropdown([["5","5"], ["6","6"], ["7","7"], ["8","8"], ["9","9"], ["10","10"]]), "SPEED")
 				.appendField("Hızıyla git");
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -68,7 +68,7 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendValueInput("VALUE")
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/motoricon.png`,20,20,"*"))
-				.appendField("İleri doğru")
+				.appendField("İleriye doğru")
 				.appendField(new Blockly.FieldDropdown([["5","5"], ["6","6"], ["7","7"], ["8","8"], ["9","9"], ["10","10"]]), "SPEED")
 				.appendField("Hızıyla");
 			this.appendDummyInput()
@@ -77,7 +77,7 @@ module.exports = function (Blockly) {
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -87,7 +87,7 @@ module.exports = function (Blockly) {
 		init: function() {
 			this.appendValueInput("VALUE")
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/motoricon.png`,20,20,"*"))
-				.appendField("Geri doğru")
+				.appendField("Geriye doğru")
 				.appendField(new Blockly.FieldDropdown([["5","5"], ["6","6"], ["7","7"], ["8","8"], ["9","9"], ["10","10"]]), "SPEED")
 				.appendField("Hızıyla");
 			this.appendDummyInput()
@@ -96,7 +96,7 @@ module.exports = function (Blockly) {
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -116,7 +116,7 @@ module.exports = function (Blockly) {
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -136,7 +136,7 @@ module.exports = function (Blockly) {
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -153,7 +153,7 @@ module.exports = function (Blockly) {
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -170,7 +170,7 @@ module.exports = function (Blockly) {
 			this.setInputsInline(true);
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(80);
+			this.setColour(20);
 			this.setTooltip("Led yakmak ve söndürmek için kullanılır");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}

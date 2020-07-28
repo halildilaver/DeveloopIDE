@@ -8,11 +8,11 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_dist'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("Mesafe'yi")
+				.appendField("Mesafeyi")
 				.appendField(new Blockly.FieldDropdown([["santimetre","1"], ["milimetre","0"]]), "TYPE")
 				.appendField("cinsinde hesapla");
 			this.setOutput(true);
-			this.setColour(30);
+			this.setColour(80);
 			this.setTooltip("Mesafeyi hesaplamak için kullanılır.");
 			this.setHelpUrl("http://kivblocks.kivvi.com.tr");
 		}
@@ -24,7 +24,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldImage(`file:///${dirIcon}/static/icons/battery.png`,20,20,"*"))
 				.appendField("Kalan batarya bilgisi");
 			this.setOutput(true);
-			this.setColour(30);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -33,10 +33,9 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_hcsr04p'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("Mesafe'yi HC-SR04p")
-				.appendField("kullanarak hesapla");
+				.appendField("Mesafe hesapla");
 			this.setOutput(true, "Number");
-			this.setColour(30);
+			this.setColour(80);
 			this.setTooltip("Mesafeyi hesaplamak için kullanılır.");
 			this.setHelpUrl("http://kivblocks.kivvi.com.tr");
 		}
@@ -45,9 +44,9 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_ldr'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("LDR");
+				.appendField("Işık şiddetini hesapla");
 			this.setOutput(true, "Number");
-			this.setColour(30);
+			this.setColour(80);
 			this.setTooltip("ldr");
 			this.setHelpUrl("");
 		}
@@ -57,11 +56,11 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['kivvi_qrd1117'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("QRD1117 seç")
-				.appendField(new Blockly.FieldDropdown([["midQRD","midQRD"], ["leftQRD","leftQRD"], ["rightQRD","rightQRD"]]), "QRD");
+				.appendField(new Blockly.FieldDropdown([["Orta","midQRD"], ["Sol","leftQRD"], ["Sağ","rightQRD"]]), "QRD")
+				.appendField("Çizgi izleme sensörünü oku");
 			this.setInputsInline(true);
 			this.setOutput(true, "Number");
-			this.setColour(30);
+			this.setColour(80);
 			this.setTooltip("???");
 			this.setHelpUrl("http://www.kivvi.com.tr");
 		}
@@ -73,7 +72,7 @@ module.exports = function (Blockly) {
 				.appendField("MLX Sıcaklık Sensörünü Çalıştır");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -88,7 +87,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["santigrat","C"], ["fahrenayt","F"]]), "TYPE")
 				.appendField("cinsinden ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -101,7 +100,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["Sıcaklık","true"], ["Nem","false"]]), "TYPE")
 				.appendField("değerini ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -113,7 +112,7 @@ module.exports = function (Blockly) {
 				.appendField("MPU İvme ve Gyro Sensörünü Çalıştır");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -122,10 +121,10 @@ module.exports = function (Blockly) {
 	Blockly.Blocks['mpu_update'] = {
 		init: function() {
 			this.appendDummyInput()
-				.appendField("MPU Update");
+				.appendField("MPU Güncelle");
 			this.setPreviousStatement(true);
 			this.setNextStatement(true);
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -136,7 +135,7 @@ module.exports = function (Blockly) {
 			this.appendDummyInput()
 				.appendField("MPU ile ortamın sıcaklık değerini ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -149,7 +148,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["X","X"], ["Y","Y"],["Z","Z"]]), "EKSEN")
 				.appendField("Ekseninin ivmesini ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -162,7 +161,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["X","X"], ["Y","Y"],["Z","Z"]]), "EKSEN")
 				.appendField("Ekseninin jireskop değerini ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -175,7 +174,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["X","X"], ["Y","Y"]]), "EKSEN")
 				.appendField("Ekseninin ham açı değerini ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -188,7 +187,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["X","X"], ["Y","Y"],["Z","Z"]]), "EKSEN")
 				.appendField("Ekseninin ham jireskop açı değerini ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}
@@ -201,7 +200,7 @@ module.exports = function (Blockly) {
 				.appendField(new Blockly.FieldDropdown([["X","X"], ["Y","Y"],["Z","Z"]]), "EKSEN")
 				.appendField("Ekseninin işlenmiş açı değerini ölç");
 			this.setOutput(true, "Number");
-			this.setColour(50);
+			this.setColour(80);
 			this.setTooltip("");
 			this.setHelpUrl("");
 		}

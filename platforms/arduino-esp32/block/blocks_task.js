@@ -11,7 +11,7 @@ module.exports = function(Blockly) {
       .setCheck(null);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("catch event when digital GPIO has been change.");
       this.setHelpUrl("");
     }
@@ -27,7 +27,7 @@ module.exports = function(Blockly) {
       .setCheck(null);
       this.setPreviousStatement(false, null);
       this.setNextStatement(false, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("catch event when digital GPIO has been change.");
       this.setHelpUrl("");
     }
@@ -47,7 +47,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("do task periodically");
       this.setHelpUrl("");
     }
@@ -67,7 +67,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(false, null);
       this.setNextStatement(false, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("do task periodically");
       this.setHelpUrl("");
     }
@@ -85,7 +85,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("do task once");
       this.setHelpUrl("");
     }
@@ -103,7 +103,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(false, null);
       this.setNextStatement(false, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("do task once");
       this.setHelpUrl("");
     }
@@ -117,7 +117,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("start concurrent task");
       this.setHelpUrl("");
     }
@@ -131,7 +131,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(false, null);
       this.setNextStatement(false, null);
-      this.setColour(225);
+      this.setColour(125);
       this.setTooltip("start concurrent task");
       this.setHelpUrl("");
     }
@@ -144,7 +144,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(230);
+      this.setColour(125);
       this.setTooltip("detach running task");
       this.setHelpUrl("");
     }
@@ -157,7 +157,7 @@ module.exports = function(Blockly) {
       this.setInputsInline(true);
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
-      this.setColour(230);
+      this.setColour(125);
       this.setTooltip("detach gpio interrupt task");
       this.setHelpUrl("");
     }

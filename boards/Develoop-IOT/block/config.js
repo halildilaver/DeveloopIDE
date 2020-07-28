@@ -8,7 +8,7 @@ module.exports = {
       icon: `file:///${dirIcon}/static/icons/screen.png`,
       blocks: [
 		"kivvi_screen_setup",
-		'text_join',
+		"kivvi_screen_start",
 		{
 			xml: 
 			`<block type="kivvi_screen_toscreen">
@@ -19,6 +19,7 @@ module.exports = {
                     </value> 
 			</block>`
 		},
+		'text_join',
 		"kivvi_screen_clear",
 		"kivvi_screen_send"
       ]
@@ -160,7 +161,7 @@ module.exports = {
       ]
     },
 	{
-	  name: "RGB LED",
+	  name: "LED",
 	  color: "65",
 	  icon: `file:///${dirIcon}/static/icons/led.png`,
 	  blocks: [

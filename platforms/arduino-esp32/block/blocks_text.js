@@ -1,8 +1,8 @@
 module.exports = function(Blockly){
     'use strict';
 
-Blockly.Constants.Text.HUE = 160;
-var color1 = 160;
+Blockly.Constants.Text.HUE = 0;
+var color1 = 0;
 
 Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
   // Block for text value
@@ -17,7 +17,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     "output": "String",
     "colour": color1,
     "colourSecondary": color1,
-    "colourTertiary": "%{BKY_TEXTS_HUE}",
+    "colourTertiary": 0,
     "helpUrl": "%{BKY_TEXT_TEXT_HELPURL}",
     "tooltip": "%{BKY_TEXT_TEXT_TOOLTIP}",
     "extensions": [
@@ -30,7 +30,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     "message0": "",
     "output": "String",    
     "inputsInline": true,
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "helpUrl": "%{BKY_TEXT_JOIN_HELPURL}",
     "tooltip": "%{BKY_TEXT_JOIN_TOOLTIP}",
     "mutator": "text_join_mutator"
@@ -46,7 +46,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       "type": "input_statement",
       "name": "STACK"
     }],
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "tooltip": "%{BKY_TEXT_CREATE_JOIN_TOOLTIP}",
     "enableContextMenu": false
   },
@@ -55,7 +55,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     "message0": "%{BKY_TEXT_CREATE_JOIN_ITEM_TITLE_ITEM}",
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "tooltip": "%{BKY_TEXT_CREATE_JOIN_ITEM_TOOLTIP}",
     "enableContextMenu": false
   },
@@ -73,7 +73,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
     }],
     "previousStatement": null,
     "nextStatement": null,
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "extensions": [
       "text_append_tooltip"
     ]
@@ -89,7 +89,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": 'Number',
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "tooltip": "%{BKY_TEXT_LENGTH_TOOLTIP}",
     "helpUrl": "%{BKY_TEXT_LENGTH_HELPURL}"
   },
@@ -104,7 +104,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": 'Boolean',
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "tooltip": "%{BKY_TEXT_ISEMPTY_TOOLTIP}",
     "helpUrl": "%{BKY_TEXT_ISEMPTY_HELPURL}"
   },
@@ -138,7 +138,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": "Number",
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "helpUrl": "%{BKY_TEXT_INDEXOF_HELPURL}",
     "inputsInline": true,
     "extensions": [
@@ -164,7 +164,7 @@ Blockly.defineBlocksWithJsonArray([  // BEGIN JSON EXTRACT
       }
     ],
     "output": "String",
-    "colour": "%{BKY_TEXTS_HUE}",
+    "colour": 0,
     "helpUrl": "%{BKY_TEXT_CHARAT_HELPURL}",
     "inputsInline": true,
     "mutator": "text_charAt_mutator"
@@ -330,7 +330,7 @@ Blockly.Blocks['text_getSubstring'] = {
       [Blockly.Msg.TEXT_GET_SUBSTRING_END_LAST, 'LAST']
     ];
     this.setHelpUrl(Blockly.Msg.TEXT_GET_SUBSTRING_HELPURL);
-    this.setColour(Blockly.Msg.TEXTS_HUE);
+    this.setColour(0);
     this.appendValueInput('STRING')
         .setCheck('String')
         .appendField(Blockly.Msg.TEXT_GET_SUBSTRING_INPUT_IN_TEXT);
@@ -437,7 +437,7 @@ Blockly.Blocks['text_changeCase'] = {
       [Blockly.Msg.TEXT_CHANGECASE_OPERATOR_LOWERCASE, 'LOWERCASE']
     ];
     this.setHelpUrl(Blockly.Msg.TEXT_CHANGECASE_HELPURL);
-    this.setColour(Blockly.Msg.TEXTS_HUE);
+    this.setColour(0);
     this.appendValueInput('TEXT')
         .setCheck('String')
         .appendField(new Blockly.FieldDropdown(OPERATORS), 'CASE');
@@ -455,7 +455,7 @@ Blockly.Blocks['text_trim'] = {
    */
   init: function() {
     this.setHelpUrl(Blockly.Msg.TEXT_TRIM_HELPURL);
-    this.setColour(Blockly.Msg.TEXTS_HUE);    
+    this.setColour(0);    
     this.appendValueInput('TEXT')
         .setCheck('String')
         .appendField("trim");
@@ -494,7 +494,7 @@ Blockly.Blocks['text_replace'] = {
       "previousStatement": null,
       "nextStatement": null,
       "inputsInline": true,
-      "colour": Blockly.Msg.TEXTS_HUE,
+      "colour": 0,
       "tooltip": Blockly.Msg.TEXT_REPLACE_TOOLTIP,
       "helpUrl": Blockly.Msg.TEXT_REPLACE_HELPURL
     });
