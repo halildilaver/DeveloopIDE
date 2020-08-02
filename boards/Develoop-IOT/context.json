@@ -1,8 +1,0 @@
-{
-    "port_vid_pid": [
-      "04b4:0003",
-      "0403:6015"
-    ],
-    "cflags": ["-I\"{board}/include\"","-DESP_PLATFORM"],
-    "libflags" : [ ]
-}
